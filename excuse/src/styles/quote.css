@@ -1,0 +1,123 @@
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+/*Mobile: 375px*/
+
+.card-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--darkGrayishBlue);
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.content {
+    position: relative;
+    top: 40px;
+}
+
+#advice-id {
+    text-align: center;
+    font-size: x-small;
+    letter-spacing: 2px;
+    color: var(--neonGreen);
+}
+
+.quote {
+    height: 120px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#quote {
+    font-size: 28px;
+    color: var(--lightCyan);
+    text-align: center;
+}
+
+#tag {
+    color: var(--neonGreen);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    background-color: var(--neonGreen);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -130px;
+    right: calc(350px/2.35);
+}
+
+.btn:hover {
+    box-shadow: 0 0 30px var(--neonGreen);
+    cursor: pointer;
+}
+
+
+.btn svg {
+    position: relative;
+    top: 1.95px;
+}
+
+#input {
+    background: 0;
+    color: gray;
+    border: 0;
+    outline: none;
+    width: 80vw;
+    max-width: 200px;
+    margin: 50px 0 0 30px;
+
+
+}
+
+select {
+    background: 0;
+    border: 0;
+    color: gray;
+    outline: none;
+    float: left;
+    margin: 50px 0 0 30px;
+}
+
+
+
+/*Desktop: 1440px*/
+
+@media screen and (min-width: 1440px) {
+    .card-quote {
+        height: 300px;
+        width: 500px;
+    }
+
+    .quote {
+        height: 100px;
+    }
+
+    .btn {
+        right: calc(500px/2.25);
+        bottom: -105px;
+    }
+
+    select {
+        font-size: 1.3em;
+    }
+
+    source {
+        position: relative;
+        bottom: 50px;
+        left: 28px;
+    }
+}
